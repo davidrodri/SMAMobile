@@ -8,10 +8,22 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-searchbar placeholder="Ingresar Codigo de Barra" (ionInput)="getItems($event)"></ion-searchbar>
-  <ion-list>
-    <ion-item *ngFor="let item of items">
-      {{ item }}
-    </ion-item>
-  </ion-list>
+  <ion-searchbar placeholder="Ingresar Codigo de Barra" (ionInput)="buscarProducto($event.target.value)"></ion-searchbar>
+  <ion-card *ngIf="producto">
+      <img src="img/nin-live.png"/>
+      <ion-card-content>
+        <ion-card-title>
+          {{producto.itemCode}}
+          </ion-card-title>
+          <p>
+              {{producto.itemName}}
+            </p>
+      </ion-card-content>
+    </ion-card>
+<div *ngIf="producto">
+       
+        
+
+      </div>
+  
 </ion-content>

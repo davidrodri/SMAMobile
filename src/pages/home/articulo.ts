@@ -1,6 +1,6 @@
 export interface IArticulo{
-    ArticuloID: string,
-    NombreArticulo:string,
-    CodigoBarra:string
+    itemCode: string,
+    itemName:string,
+    codeBars:string
 
 }
