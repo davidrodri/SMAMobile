@@ -1,0 +1,7 @@
+{
+  "name": "SMAMobile",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
